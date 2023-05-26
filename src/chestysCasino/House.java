@@ -13,7 +13,7 @@ public class House {
 		
 	}
 	
-	public void psyBets() {
+	public void payBets() {
 		
 	}
 	

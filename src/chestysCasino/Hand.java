@@ -2,6 +2,8 @@ package chestysCasino;
 
 public class Hand { 
 	
+	private Card[] myHand= new Card[10];
+	
 	private int cards;
 	private int value;
 	
@@ -11,7 +13,9 @@ public class Hand {
 	
 	
 	public void hit() {
+		
 		//add deck.next();  ???
+		// getRandom() or pullRandom in deck class
 	}
 	
 	public void stay() {
@@ -19,15 +23,23 @@ public class Hand {
 	}
 	
 	public void split() {
-		// create new hand with each card
+		// create new hand[] with each card
+		// if cards at index 0 and 1 == new card[]
 	}
 
 	public int getCards() {//do we need net next for random card
 		return cards;
 	}
 	
-	public int calculateValue() {
+	public int calculateTotalHandValue() {
+		//acecheck
+		//card.getValue
+		
 		return value;
+	}
+	
+	public void resetHand() {
+		cards = 0;
 	}
 	
 //	public void doubleDown() {

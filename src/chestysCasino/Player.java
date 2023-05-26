@@ -23,33 +23,45 @@ public class Player extends Person{
 	}
 	
 	public void cashOut() {
-		//set bank to zero
+		bank = 0;
 	}
 	
 	public void win() {
 		bank += bet;
+		bet = 0;
 	}
 	
 	public void loss() {
 		bank -= bet;
+		bet = 0;
 	}
 	
 	public void blackJack() {
 		bank += bet * (3/2);
+		bet = 0;
 	}
 	
 	public void bust() {
 		bank -= bet;
+		bet = 0;
 	}
 	
 	public void push() {
-		
+		bet = 0;
 	}
 	
 	public void doubleDown() {
 		bet *= 2;
 		//pulls one card 
 		//so deck.next();
+		bet = 0;
+	}
+	
+	public void insurance() {
+		//dealer showing ace 
+		//pays 2/1
+		//half players bet
+		//new bet?
 	}
 
 }

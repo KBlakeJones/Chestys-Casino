@@ -8,6 +8,7 @@ public class Player extends Person{
 	private int bank;
 	private Hand hand;
 	private int deposit; 
+	static Player b = new Player();
 	
 	public Player() {
 		
@@ -19,30 +20,30 @@ public class Player extends Person{
 	//so it become 
 	
 	public void addFunds() {
-		bank += deposit;
+		setBank(getBank() + deposit);
 	}
 	
 	public void cashOut() {
-		bank = 0;
+		setBank(0);
 	}
 	
 	public void win() {
-		bank += bet;
+		setBank(getBank() + bet);
 		bet = 0;
 	}
 	
 	public void loss() {
-		bank -= bet;
+		setBank(getBank() - bet);
 		bet = 0;
 	}
 	
 	public void blackJack() {
-		bank += bet * (3/2);
+		setBank(getBank() + bet * (3/2));
 		bet = 0;
 	}
 	
 	public void bust() {
-		bank -= bet;
+		setBank(getBank() - bet);
 		bet = 0;
 	}
 	
@@ -64,6 +65,14 @@ public class Player extends Person{
 		//pays 2/1
 		//half players bet
 		//new bet?
+	}
+
+	public int getBank() {
+		return bank;
+	}
+
+	public void setBank(int bank) {
+		this.bank = bank;
 	}
 
 }

@@ -1,7 +1,7 @@
 package chestysCasino;
 
 public class Person {
-	
+//	Person p = new Person();
 	//dealer is-a person
 	//player is-a person
 	

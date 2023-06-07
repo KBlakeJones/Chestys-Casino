@@ -29,7 +29,7 @@ public class Card {
 	}
 
 	public enum Value {
-		TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE;
+		TWO, THREE, FOUR, FIVE, SIX, SEVEN, EIGHT, NINE, TEN, JACK, QUEEN, KING, ACE, BIGACE;
 
 	}
 	
@@ -48,6 +48,7 @@ public class Card {
 		case QUEEN: return 10;
 		case KING: return 10;
 		case ACE: return 1;
+		case BIGACE: return 11;
 		default: return 0;
 		}
 	}

@@ -1,7 +1,7 @@
 package chestysCasino;
 
 public class Person {
-//	Person p = new Person();
+	
 	//dealer is-a person
 	//player is-a person
 	
@@ -35,17 +35,17 @@ public class Person {
 		this.hand = hand;
 	}
 	
-	public void hit() {
-		
-	}
-	
-	public void stay() {
-		
-	}
-	
-	public void push() {
-		
-	}
+//	public void hit() {
+//		
+//	}
+//	
+//	public void stay() {
+//		
+//	}
+//	
+//	public void push() {
+//		
+//	}
 	
 
 }
